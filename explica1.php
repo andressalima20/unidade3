@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explica1</title>
 </head>
+
+<!--WHILE -- ENQUANTO-->
 <body>
 
     <?php
-
-    $x= 100;
-    $y= 200;
-
-    $x == $y;
-
-    echo "<br/>0 valor de x é : " .$x;
-    echo "<br/>0 valor de y é : " .$y;
+    // teste inicio
+    $contador = 1;
+    while ($contador <= 10){
+        echo $contador."<br>";
+        $contador = $contador + 1;
+    }
+    echo "depois...final";
     ?>
-    
+
 </body>
 </html>
