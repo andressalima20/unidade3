@@ -7,15 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-
     <?php
-    echo"<h1>Tabuada de 8</h1>";
-    echo"<hr/>";
-    $num = 8;
-    for ($i=1; $i <=1000 ; $i++) {
-        echo $num." x ".$i." = ".($num * $i)."<br/>";
+    $i = 10;
+    while($i > 0) {
+    echo $1." , ";
+    $i--;
+
     }
     ?>
-    
 </body>
 </html>
