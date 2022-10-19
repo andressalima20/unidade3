@@ -1,24 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício1</title>
-</head>
-<body>
-    <form action="ex1.php" method="GET">
-        Digite um número:<br/>
-        <input type="text" name="num"/><br/><br/>
-        <input type="submit" value="verificar"/>
-    </form>
-    
-    <?php
-   $num = $_GET["num"];
-   if($num > 10){
-    echo "<br/> O número é maior que 10.";
-   }
-    ?>
+<?php
+$carro = array("gol","celta","fox","corola","civic");
+var_dump($carro);
+echo"<br/>==========<br/>";
 
-</body>
-</html>
+$carros1[]="gol";
+$carros1[]="hilux";
+$carros1[]="camaro";
+$carros1[]="ferrari";
+$carros1[]="porsche";
+$carros1[]="brasília";
+var_dump($carros1);
+
+echo"<br/>==========<br/>";
+echo" eu tenho um ".$carros1[0];
+
+echo"<br/>==========<br/>";
+echo" eu tenho um ".$carro[0];
+
+foreach($carro as $car){
+    echo $car."<br/>";
+}
+?>
