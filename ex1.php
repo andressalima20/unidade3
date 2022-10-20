@@ -1,23 +1,29 @@
 <?php
-$carro = array("gol","celta","fox","corola","civic");
-var_dump($carro);
-echo"<br/>==========<br/>";
 
-$carros1[]="gol";
-$carros1[]="hilux";
-$carros1[]="camaro";
-$carros1[]="ferrari";
-$carros1[]="porsche";
-$carros1[]="brasília";
-var_dump($carros1);
+$nome = array("Andrea","Andressa","Rafaela","Thamilliz","Josiane","Isaac","Byanka");
+$nota = array(10,9,8,7,6,5,4);
 
-echo"<br/>==========<br/>";
-echo" eu tenho um ".$carros1[0];
+$media = 0;
+$soma = 0;
+$contador = 0;
 
-echo"<br/>==========<br/>";
-echo" eu tenho um ".$carro[0];
-
-foreach($carro as $car){
-    echo $car."<br/>";
+foreach($nota as $n) {
+    $soma= $soma + $n;
+    $contador++;
 }
+
+    echo "<br/> A soma das notas é: ".$soma;
+    echo "<br/> A quantidade de alunos é: ".$contador;
+    echo "<br/> A média da turma é:".($soma / $contador);
+    $media = $soma / $contador;
+    echo "<br/> A média da turma é: ".$media;
+
+    foreach($nota as $chave => $n) {
+        
+        if($n >= $media){
+            echo "<br/> O aulno ".$nome[$chave]. " Teve nota acima da média ".$nota."<br/>";
+        }else{
+            echo "<br/> O aluno ".$nome[$chave]. " Teve nota abaixo da média ".$nota."<br/>";
+        }
+    }
 ?>
